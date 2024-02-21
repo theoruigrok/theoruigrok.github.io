@@ -116,6 +116,21 @@ body {
     border-radius: 50%;
 }
 
+/* Adjust the size of the icons */
+.icons .icon {
+    font-size: 24px; /* Adjust the size as needed */
+}
+
+/* Ensure the icons are displayed properly */
+.brands.fa-linkedin-in::before {
+    content: "\f0e1"; /* Unicode for the LinkedIn icon */
+}
+
+.brands.fa-envelope::before {
+    content: "\f0e0"; /* Unicode for the envelope icon */
+}
+
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     #wrapper {
