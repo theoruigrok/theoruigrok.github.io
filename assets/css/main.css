@@ -58,6 +58,13 @@ body {
     color: #333;
 }
 
+.profile-picture {
+    width: 200px; /* Adjust the width as needed */
+    border-radius: 50%; /* Creates a circular shape */
+    border: 2px solid #fff; /* Example border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
+}
+
 .content {
     font-size: 16px;
     line-height: 1.8;
