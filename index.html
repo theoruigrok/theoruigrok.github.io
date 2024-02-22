@@ -53,7 +53,7 @@
                     <ul>
                         <li>Name: Theo Ruigrok</li>
                         <li>Location: Antibes</li>
-                        <li>Email: <a href="mailto:theoruigrok@outlook.com">theoruigrok@outlook.com</a></li>
+                        <li>Email: <span id="email">theoruigrok@outlook.com</span> <button onclick="copyToClipboard()"><i class="fas fa-copy"></i></button></li>
                         <li><a href="https://www.linkedin.com/in/theo-ruigrok-van-der-werven-a69396245/">LinkedIn</a></li>
                     </ul>
                     <p><strong>Skills Highlights:</strong></p>
@@ -117,13 +117,18 @@
 </div>
 
 <!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+<script>
+    function copyToClipboard() {
+        var email = document.getElementById("email");
+        var range = document.createRange();
+        range.selectNode(email);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+        alert("Email copied to clipboard!");
+    }
+</script>
 
 </body>
 </html>
