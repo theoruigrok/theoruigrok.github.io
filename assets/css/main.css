@@ -157,3 +157,14 @@ body {
     margin-bottom: 0;
 }
 }
+
+/* Add empty lines between paragraphs */
+.content p {
+    margin-bottom: 20px;
+}
+
+/* Adjust the margin-top for the picture */
+#intro img {
+    margin-top: 10px; /* Adjust the margin-top as needed */
+}
+
