@@ -140,4 +140,20 @@ body {
     #sidebar {
         order: -1;
     }
+
+
+/* Add space between paragraphs */
+.content p {
+    margin-bottom: 20px;
+}
+
+/* Adjust image position */
+#intro img {
+    margin-top: 20px; /* Adjust as needed */
+}
+
+/* Remove margin from h2 */
+.title h2 {
+    margin-bottom: 0;
+}
 }
