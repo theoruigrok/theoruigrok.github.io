@@ -63,7 +63,9 @@ body {
     border-radius: 50%; /* Creates a circular shape */
     border: 2px solid #fff; /* Example border */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
+    margin-top: 10px; /* Adjust the margin-top as needed */
 }
+
 
 .content {
     font-size: 16px;
