@@ -55,12 +55,17 @@
 <!-- Scripts -->
 <script>
     function copyToClipboard() {
-        var emailInput = document.getElementById("email");
-        emailInput.select();
+        var emailSpan = document.getElementById("email");
+        var range = document.createRange();
+        range.selectNode(emailSpan);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
         document.execCommand("copy");
+        window.getSelection().removeAllRanges();
         alert("Email copied to clipboard!");
     }
 </script>
+
 
 
 </body>
