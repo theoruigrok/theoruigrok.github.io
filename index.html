@@ -3,7 +3,7 @@
 <head>
     <title>Theo Ruigrok - Deckhand</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Removed user-scalable=no -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -11,10 +11,10 @@
 <body class="is-preload">
 
 <!-- Wrapper -->
-<div id="wrapper" style="display: flex; flex-direction: column;"> <!-- Added flexbox layout -->
+<div id="wrapper">
 
     <!-- Main -->
-    <div id="main" style="flex: 1;"> <!-- Added flex-grow to take remaining space -->
+    <div id="main">
         <article class="post">
             <header>
                 <div class="title">
@@ -40,14 +40,14 @@
     </div>
 
     <!-- Sidebar -->
-    <section id="sidebar" style="flex-shrink: 0;"> <!-- Added flex-shrink to prevent sidebar from growing -->
+    <section id="sidebar">
         <section id="intro">
             <a href="#" class="logo"><img src="images/profile_picture.jpg" alt="" /></a>
             <header>
                 <h2>Theo Ruigrok</h2>
                 <p>Deckhand</p> <!-- Remove "Aspiring" from here -->
             </header>
-            <img src="images/cropped.jpg" alt="My picture goes here later" style="margin-top: 0px; max-width: 100%;" /> <!-- Adjust the margin-top and max-width as needed -->
+            <img src="images/cropped.jpg" alt="My picture goes here later" style="margin-top: 0px;" /> <!-- Adjust the margin-top as needed -->
         </section>
     </section>
 </div>
@@ -55,4 +55,13 @@
 <!-- Scripts -->
 <script>
     function copyToClipboard() {
-        var
+        var emailInput = document.getElementById("email");
+        emailInput.select();
+        document.execCommand("copy");
+        alert("Email copied to clipboard!");
+    }
+</script>
+
+
+</body>
+</html>
