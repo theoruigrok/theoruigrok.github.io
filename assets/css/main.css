@@ -46,8 +46,8 @@ body {
 
 /* Profile picture */
 .intro img {
-    width: 400px; /* Adjust the width as needed */
-    height: 400px; /* Adjust the height as needed */
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Creates a circular shape */
     border: 2px solid #fff; /* Example border */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
@@ -91,12 +91,5 @@ body {
     /* Reset margin for profile picture */
     .intro img {
         margin-bottom: 0;
-    }
-
-    /* Remove width property for smaller screens */
-    .intro img {
-        width: auto; /* Set width to auto for responsive behavior */
-        max-width: 100%; /* Ensure image does not exceed container width */
-        height: auto; /* Maintain aspect ratio */
     }
 }
