@@ -114,6 +114,8 @@ body {
     border-radius: 50%;
 }
 
+
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     /* Arrange items vertically */
@@ -133,6 +135,6 @@ body {
 
     /* Remove width property for smaller screens */
     .logo img {
-        width: auto; /* Set width to auto for responsive behavior */
+        width: 200px; /* Set width to auto for responsive behavior */
     }
 }
