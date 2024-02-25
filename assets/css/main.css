@@ -54,12 +54,6 @@ body {
     margin-bottom: 20px; /* Add margin to bottom */
 }
 
-
-/* Remove style rules applied to the profile picture */
-.profile-picture {
-    /* Removed width, height, border-radius, border, box-shadow, margin-bottom */
-}
-
 .icons a {
     display: inline-block; /* Ensure icons are aligned horizontally */
     width: 40px;
@@ -95,12 +89,14 @@ body {
     }
 
     /* Reset margin for profile picture */
-    .profile-picture {
+    .intro img {
         margin-bottom: 0;
     }
 
     /* Remove width property for smaller screens */
-    .profile-picture {
-        width: 200px; /* Set width to auto for responsive behavior */
+    .intro img {
+        width: auto; /* Set width to auto for responsive behavior */
+        max-width: 100%; /* Ensure image does not exceed container width */
+        height: auto; /* Maintain aspect ratio */
     }
 }
