@@ -130,4 +130,9 @@ body {
     .profile-picture {
         margin-bottom: 0;
     }
+
+    /* Remove width property for smaller screens */
+    .logo img {
+        width: auto; /* Set width to auto for responsive behavior */
+    }
 }
