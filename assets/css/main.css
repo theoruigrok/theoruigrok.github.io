@@ -44,6 +44,17 @@ body {
     color: #006994; /* Dark blue for headings */
 }
 
+/* Profile picture */
+.intro img {
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    border-radius: 50%; /* Creates a circular shape */
+    border: 2px solid #fff; /* Example border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
+    margin-bottom: 20px; /* Add margin to bottom */
+}
+
+
 /* Remove style rules applied to the profile picture */
 .profile-picture {
     /* Removed width, height, border-radius, border, box-shadow, margin-bottom */
