@@ -45,51 +45,12 @@ body {
 }
 
 /* Profile picture */
-.intro img {
-    max-width: 100%; /* Ensure image does not exceed container width */
+.profile-picture {
+    width: 100%; /* Ensure image fills its container */
+    max-width: 400px; /* Limit maximum width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Creates a circular shape */
     border: 2px solid #fff; /* Example border */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
     margin-bottom: 20px; /* Add margin to bottom */
-}
-
-.icons a {
-    display: inline-block; /* Ensure icons are aligned horizontally */
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background-color: #006994; /* Dark blue for icons */
-    color: #fff;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-/* Adjust the size of the icons */
-.icons .icon {
-    font-size: 20px;
-}
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    /* Add space between paragraphs */
-    .content p {
-        margin-bottom: 20px;
-    }
-
-    /* Arrange items vertically */
-    #wrapper {
-        flex-direction: column;
-    }
-
-    /* Put sidebar on top */
-    #sidebar {
-        order: -1;
-    }
-
-    /* Reset margin for profile picture */
-    .intro img {
-        margin-bottom: 0;
-    }
 }
