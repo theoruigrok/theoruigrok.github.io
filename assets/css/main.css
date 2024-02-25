@@ -1,3 +1,31 @@
+/* Reset default browser styles */
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
@@ -81,8 +109,8 @@ body {
 
 /* Profile picture */
 .profile-picture {
-    width: 200px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
     border-radius: 50%; /* Creates a circular shape */
     border: 2px solid #fff; /* Example border */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
@@ -112,4 +140,3 @@ body {
         margin-bottom: 0;
     }
 }
-
