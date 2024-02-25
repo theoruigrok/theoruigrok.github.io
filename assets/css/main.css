@@ -44,15 +44,10 @@ body {
     color: #006994; /* Dark blue for headings */
 }
 
+/* Remove style rules applied to the profile picture */
 .profile-picture {
-    width: 2400px; /* Adjust the width as needed */
-    height: 2400px; /* Adjust the height as needed */
-    border-radius: 50%; /* Creates a circular shape */
-    border: 2px solid #fff; /* Example border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
-    margin-bottom: 20px; /* Add margin to bottom */
+    /* Removed width, height, border-radius, border, box-shadow, margin-bottom */
 }
-
 
 .icons a {
     display: inline-block; /* Ensure icons are aligned horizontally */
@@ -77,47 +72,7 @@ body {
     .content p {
         margin-bottom: 20px;
     }
-}
 
-/* Main container */
-#wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Main content */
-#main {
-    flex: 2;
-    padding: 20px;
-}
-
-/* Sidebar */
-#sidebar {
-    flex: 1;
-    padding: 20px;
-}
-
-/* Profile section */
-#intro {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-}
-
-
-/* Logo */
-.logo img {
-    width: 400px; /* Adjust the width of the image as needed */
-    border-radius: 50%;
-}
-
-
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
     /* Arrange items vertically */
     #wrapper {
         flex-direction: column;
@@ -134,7 +89,7 @@ body {
     }
 
     /* Remove width property for smaller screens */
-    .logo img {
+    .profile-picture {
         width: 200px; /* Set width to auto for responsive behavior */
     }
 }
